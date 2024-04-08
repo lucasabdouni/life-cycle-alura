@@ -37,6 +37,11 @@ export class ListaDeCompraService {
     this.atualizarLocalStorage();
   }
 
+  limparLista() {
+    this.listaDeCompra = [];
+    this.atualizarLocalStorage();
+  }
+
   editarItemDaLista(itemAntigo: Item, nomeEditadoDoItem: string) {
     const itemEditado: Item = {
       id: itemAntigo.id,
